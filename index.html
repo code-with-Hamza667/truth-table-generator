@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Truth Table Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Truth Table Generator</h1>
+      <form id="truthTableForm">
+        <label for="expression">Enter Logical Expression:</label>
+        <input
+          type="text"
+          id="expression"
+          name="expression"
+          placeholder="Enter expression here"
+          required
+        />
+        <div class="operators">
+          <button type="button" onclick="insertOperator(' ∧ ')">AND (∧)</button>
+          <button type="button" onclick="insertOperator(' ∨ ')">OR (∨)</button>
+          <button type="button" onclick="insertOperator(' ¬')">NOT (¬)</button>
+        </div>
+        <button type="submit" class="generate">Generate Truth Table</button>
+      </form>
+      <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

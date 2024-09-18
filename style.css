@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: max-width 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.operators {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.operators button {
+  padding: 10px;
+  font-size: 1em;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.generate {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.generate:hover {
+  background-color: #218838;
+}
+
+.result {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media query for small scteens */
+@media (max-width: 600px) {
+  .container {
+    max-width: 95%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input[type="text"] {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
+  .operators button {
+    padding: 8px;
+    font-size: 0.9em;
+    margin: 5px;
+    width: 100px;
+  }
+
+  button.generate {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.9em;
+    padding: 5px;
+  }
+}
